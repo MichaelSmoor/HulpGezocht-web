@@ -1,4 +1,4 @@
-﻿using System;
+﻿/*using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -117,7 +117,7 @@ namespace HulpGezocht
 
         }*/
 
-        public List<Appointment> GetAppointmentsOnDate(List<Appointment> lst, DateTime date)
+        /*public List<Appointment> GetAppointmentsOnDate(List<Appointment> lst, DateTime date)
         {
             List<Appointment> lstOnDate = new List<Appointment>();
             foreach (Appointment app in lst)
@@ -145,7 +145,7 @@ namespace HulpGezocht
             return appointmentsOnDate;
         }*/
 
-        public List<Appointment> GetAppointments(string email)
+        /*public List<Appointment> GetAppointments(string email)
         {
             return Database.GetAllAppointmentsFrom(email);
         }
@@ -317,7 +317,7 @@ namespace HulpGezocht
             return true;
         }*/
 
-        public string FindUser(string email)
+        /*public string FindUser(string email)
         {
 
             return Database.FindUser(email);
@@ -393,4 +393,4 @@ namespace HulpGezocht
         #endregion
 
     }
-}
+}*/

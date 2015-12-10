@@ -23,9 +23,9 @@ namespace HulpGezocht
             Text = text;
         }
 
-        public override string ToString()
+        /*public override string ToString()
         {           
             return Database.NameGetter(Sender).Name + "\n" + DatePosted.Day.ToString("00") + "/" + DatePosted.Month.ToString("00") + " " + DatePosted.Hour.ToString("00") + ":" + DatePosted.Minute.ToString("00") + "    " + Text;
-        }
+        }*/
     }
 }

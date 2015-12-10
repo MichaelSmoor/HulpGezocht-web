@@ -11,13 +11,13 @@ namespace HulpGezocht
         //public string Email {get; private set;}
         public DateTime Dob {get; private set;}
         public string PhoneNumber {get; private set;}
-        public  string ProfilePic {get; private set;}
-        public  string Vog {get; private set;}
+        public  int ProfilePic {get; private set;}
+        public  int Vog {get; private set;}
         public  string Bio {get; private set;}
         public bool driversLicense;
 
         // Volunteer zonder biografie
-        public Volunteer(string email, string username, string gpassword, int gpermission, bool active, DateTime dob, string phoneNumber, string profilePic, string vog, string bio, bool driverslicense) : base(email, username, gpassword, gpermission, active)
+        public Volunteer(string email, string username, string gpassword, int gpermission, bool active, DateTime dob, string phoneNumber, int profilePic, int vog, string bio, bool driverslicense) : base(email, username, gpassword, gpermission, active)
         {
             //Naam, wachtwoord, permission aanpassen niet mogelijk nu
             //Email = email;
@@ -30,7 +30,7 @@ namespace HulpGezocht
         }
 
         // Volunteer met biografie
-        public Volunteer(string email, string username, string gpassword, int gpermission, bool active, DateTime dob, string phoneNumber, string profilePic, string vog, bool driverslicense) : base(email, username, gpassword, gpermission, active)
+        public Volunteer(string email, string username, string gpassword, int gpermission, bool active, DateTime dob, string phoneNumber, int profilePic, int vog, bool driverslicense) : base(email, username, gpassword, gpermission, active)
         {
             //Naam, wachtwoord, permission aanpassen niet mogelijk nu
             //Email = email;
@@ -54,13 +54,13 @@ namespace HulpGezocht
             return true;
         }
 
-        public bool EditProfilePic(string profilePic)
+        public bool EditProfilePic(int profilePic)
         {
             ProfilePic = profilePic;
             return true;
         }
 
-        public bool EditProfileVog(string vog)
+        public bool EditProfileVog(int vog)
         {
             Vog = vog;
             return true;

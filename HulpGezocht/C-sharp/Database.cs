@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Oracle.DataAccess.Client;
+/*using Oracle.DataAccess.Client;
 using System.Windows.Forms;
 
 namespace HulpGezocht
@@ -535,7 +535,7 @@ namespace HulpGezocht
                 /*query = "SELECT text FROM message WHERE sender = :psender" +
                     " AND messageid IN (SELECT messageid FROM messagerecipient WHERE receiver = :preciever)" +
                     " AND rownum <= 10;"; oude manier*/
-                cmd.CommandText = query;
+                /*cmd.CommandText = query;
                 cmd.Connection = connection;
                 try
                 {
@@ -1011,7 +1011,7 @@ namespace HulpGezocht
         }*/
 
 
-        public static int GetPermissionLevel(string email)
+        /*public static int GetPermissionLevel(string email)
         {
             permission = 3;
             using (connection = new OracleConnection(connectionstring))
@@ -1153,6 +1153,6 @@ namespace HulpGezocht
             }
 
             return message;
-        }*/
+        }*//*
     }
-}
+}*/

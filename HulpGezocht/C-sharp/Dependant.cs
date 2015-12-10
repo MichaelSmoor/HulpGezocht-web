@@ -11,11 +11,11 @@ namespace HulpGezocht
         //public string Email { get; private set; }
         public DateTime Dob { get; private set; }
         public string PhoneNumber { get; private set; }
-        public string ProfilePic { get; private set; }
+        public int ProfilePic { get; private set; }
         public string Bio { get; private set; }
 
         // Dependant met biografie
-        public Dependant(string email, string username, string gpassword, int gpermission, bool active, DateTime dob, string phoneNumber, string profilePic, string bio)
+        public Dependant(string email, string username, string gpassword, int gpermission, bool active, DateTime dob, string phoneNumber, int profilePic, string bio)
             : base(email, username, gpassword, gpermission, active)
         {
             //Email = email;
@@ -26,7 +26,7 @@ namespace HulpGezocht
         }
 
         // dependant zonder biografie
-        public Dependant(string email, string username, string gpassword, int gpermission, bool active, DateTime dob, string phoneNumber, string profilePic)
+        public Dependant(string email, string username, string gpassword, int gpermission, bool active, DateTime dob, string phoneNumber, int profilePic)
             : base(email, username, gpassword, gpermission, active)
         {
             //Email = email;
@@ -48,7 +48,7 @@ namespace HulpGezocht
             return true;
         }
 
-        public bool EditProfilePic(string profilePic)
+        public bool EditProfilePic(int profilePic)
         {
             ProfilePic = profilePic;
             return true;
