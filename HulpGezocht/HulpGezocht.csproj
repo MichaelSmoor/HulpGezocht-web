@@ -344,6 +344,18 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="C-sharp\Administrator.cs" />
+    <Compile Include="C-sharp\Agenda.cs" />
+    <Compile Include="C-sharp\Database.cs" />
+    <Compile Include="C-sharp\Dependant.cs" />
+    <Compile Include="C-sharp\Guest.cs" />
+    <Compile Include="C-sharp\Message.cs" />
+    <Compile Include="C-sharp\Portal.cs" />
+    <Compile Include="C-sharp\Reply.cs" />
+    <Compile Include="C-sharp\Review.cs" />
+    <Compile Include="C-sharp\Topic.cs" />
+    <Compile Include="C-sharp\User.cs" />
+    <Compile Include="C-sharp\Volunteer.cs" />
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
