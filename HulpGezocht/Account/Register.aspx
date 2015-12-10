@@ -2,13 +2,8 @@
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
     <h2><%: Title %></h2>
-    <p class="text-danger">
-        <asp:Literal runat="server" ID="ErrorMessage" />
-    </p>
-
     <div class="form-horizontal">
         <hr />
-        <!--<asp:ValidationSummary runat="server" CssClass="text-danger" />-->
         <div class="form-group">
             <asp:Label runat="server" AssociatedControlID="Rol" CssClass="col-md-2 control-label">Registreren als</asp:Label>
             <div class="col-md-10">
@@ -16,8 +11,6 @@
                     <asp:ListItem Selected="True">Vrijwilliger</asp:ListItem>
                     <asp:ListItem>Hulpbehoevende</asp:ListItem>
                 </asp:RadioButtonList>
-                <asp:RequiredFieldValidator runat="server" ControlToValidate="Rol"
-                    CssClass="text-danger" ErrorMessage="Het naam veld is verplicht." Display="Dynamic" />
             </div>
         </div>
 
@@ -91,7 +84,6 @@
                 <asp:FileUpload ID="VOGUpload" runat="server" onclick="UploadButton_Click"/>
                 <asp:RequiredFieldValidator ID="VOGValidator" runat="server" ControlToValidate="VOGUpload"
                     CssClass="text-danger" ErrorMessage="VOG moet worden geupload." Display="Dynamic" />
-
                 <br />
             </div>
         </div>

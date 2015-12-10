@@ -7,126 +7,126 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace HulpGezocht.Account {
+namespace HulpGezocht {
     
     
-    public partial class Register {
+    public partial class AddTopic {
         
         /// <summary>
-        /// Rol control.
+        /// Titel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList Rol;
+        protected global::System.Web.UI.WebControls.TextBox Titel;
         
         /// <summary>
-        /// Naam control.
+        /// Details control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Naam;
+        protected global::System.Web.UI.WebControls.TextBox Details;
         
         /// <summary>
-        /// Email control.
+        /// Locatie control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Email;
+        protected global::System.Web.UI.WebControls.TextBox Locatie;
         
         /// <summary>
-        /// Password control.
+        /// Transportvorm control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Password;
+        protected global::System.Web.UI.WebControls.DropDownList Transportvorm;
         
         /// <summary>
-        /// ConfirmPassword control.
+        /// Reistijd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ConfirmPassword;
+        protected global::System.Web.UI.WebControls.TextBox Reistijd;
         
         /// <summary>
-        /// PhoneNumber control.
+        /// Urgent control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox PhoneNumber;
+        protected global::System.Web.UI.WebControls.CheckBox Urgent;
         
         /// <summary>
-        /// DateOfBirth control.
+        /// DatumOpties control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox DateOfBirth;
+        protected global::System.Web.UI.WebControls.RadioButtonList DatumOpties;
         
         /// <summary>
-        /// DriversLicense control.
+        /// Datum1Label control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox DriversLicense;
+        protected global::System.Web.UI.WebControls.Label Datum1Label;
         
         /// <summary>
-        /// ProfilePicUpload control.
+        /// Datum1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload ProfilePicUpload;
+        protected global::System.Web.UI.WebControls.TextBox Datum1;
         
         /// <summary>
-        /// ProfilePicValidator control.
+        /// Datum1Validator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator ProfilePicValidator;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator Datum1Validator;
         
         /// <summary>
-        /// VOGLabel control.
+        /// Datum2Label control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label VOGLabel;
+        protected global::System.Web.UI.WebControls.Label Datum2Label;
         
         /// <summary>
-        /// VOGUpload control.
+        /// Datum2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload VOGUpload;
+        protected global::System.Web.UI.WebControls.TextBox Datum2;
         
         /// <summary>
-        /// VOGValidator control.
+        /// Datum2Validator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator VOGValidator;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator Datum2Validator;
     }
 }
