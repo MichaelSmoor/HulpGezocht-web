@@ -58,8 +58,6 @@ namespace HulpGezocht.Account
 
         public void RegisterButton_Click (object sender, EventArgs e)
         {
-            Naam.Text = "poep";
-
             if (ProfilePicUpload.HasFile)
             {
                 try

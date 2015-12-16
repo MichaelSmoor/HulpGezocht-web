@@ -35,7 +35,7 @@
             </div>
         </div>
         <div class="form-group">
-            <asp:Label runat="server" AssociatedControlID="Reistijd" CssClass="col-md-2 control-label">Reistijd</asp:Label>
+            <asp:Label runat="server" AssociatedControlID="Reistijd" CssClass="col-md-2 control-label">Reistijd (in minuten)</asp:Label>
             <div class="col-md-10">
                 <asp:TextBox runat="server" ID="Reistijd" CssClass="form-control textbox-register" TextMode="Number" />
                 <asp:RequiredFieldValidator runat="server" ControlToValidate="Reistijd"
