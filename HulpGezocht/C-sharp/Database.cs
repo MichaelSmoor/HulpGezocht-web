@@ -10,8 +10,9 @@ namespace HulpGezocht
 {
     public static class Database
     {
-        static string connectionstring = "Data Source=192.168.20.3:1521/orcl; User Id=SYSTEM; Password=hulpgezocht";
+        //static string connectionstring = "Data Source=192.168.20.3:1521/orcl; User Id=SYSTEM; Password=hulpgezocht";
         //static string connectionstring = "Data source=localhost; User id=system; password=ytcazk";
+        static string connectionstring = "Data source=localhost; User id=system; password=fontys123";
         static OracleConnection connection;
         static OracleCommand cmd = new OracleCommand() { InitialLONGFetchSize = -1 };
         static OracleDataReader reader;
@@ -687,7 +688,7 @@ namespace HulpGezocht
         }
 
         // Een review schrijven
-        public static void InsertReview(Review review)
+        public static void InsertReview(Review review, string email) // string email toegevoegd (email is de currentuser dus de zender) moet in portaal worden aangepast
         {
             using (connection = new OracleConnection(connectionstring))
             {
@@ -701,6 +702,14 @@ namespace HulpGezocht
                     cmd.Parameters.Add("body", review.Body);
                     cmd.Parameters.Add("dateposted", review.DatePosted);
                     cmd.ExecuteNonQuery();
+
+                    cmd.Parameters.Clear();
+                    cmd.Parameters.Add("sender", email);
+                    query = "INSERT INTO reviewsender(reviewid, sender)" +
+                                                          " VALUES(" + review.Id + ", :psender)";
+                    cmd.CommandText = query;
+                    cmd.ExecuteNonQuery();
+
                 }
                 catch (Exception ex)
                 {
